@@ -1,0 +1,14 @@
+StartUp on initial page load:
+	Init database creation
+	Load data from spreadsheet and populate database
+	JQuery load planets from database by invoking rest service (planets/all)
+
+Business Objects/Entities:
+	Planet
+	Route
+	
+Rest Services Path:
+	/services/*
+	
+Outstanding tasks:
+	Compute path to destination

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="MySessionFactory">
+  <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
+  <property name="hibernate.connection.password">admin</property>
+  <property name="hibernate.connection.url">jdbc:derby:interstellar;create=true</property>
+  <property name="hibernate.connection.username">admin</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="hibernate.connection.pool_size">10</property>
+  <property name="hibernate.connection.autocommit">true</property>
+  <mapping class="za.co.discovery.assignment.bo.Planet"/>
+  <mapping class="za.co.discovery.assignment.bo.Route"/>
+ </session-factory>
+</hibernate-configuration>
